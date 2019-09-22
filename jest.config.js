@@ -1,5 +1,5 @@
 module.exports = {
-  name: "typescript-starter",
+  name: "serverless-typescript-starter",
   preset: "ts-jest",
   automock: false,
   collectCoverage: true,

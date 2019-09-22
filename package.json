@@ -1,11 +1,12 @@
 {
-  "name": "typescript-starter",
+  "name": "serverless-typescript-starter",
   "version": "1.0.0",
   "description": "A template typescript project with all the necessary tooling",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "build": "tsc --skipLibCheck",
+    "dev": "serverless offline",
     "start": "ts-node src/index.ts"
   },
   "author": "xetera",
@@ -15,6 +16,7 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.31",
     "@types/dotenv": "^6.1.1",
     "@types/jest": "^24.0.17",
     "@types/node": "^12.7.2",
@@ -28,9 +30,13 @@
     "jest": "^24.8.0",
     "jest-junit": "^7.0.0",
     "prettier": "^1.18.2",
+    "serverless": "^1.52.2",
+    "serverless-dotenv-plugin": "^2.1.1",
+    "serverless-offline": "^5.11.0",
+    "serverless-plugin-typescript": "^1.1.9",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.6.3"
   },
   "jest-junit": {
     "outputDirectory": "coverage"
